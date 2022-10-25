@@ -19,6 +19,36 @@ a {
   box-sizing: border-box;
 }
 
+.effect1:hover{
+  /* scale: 1.4 1.4 1.4; */
+  /* animation: effectanimate 1s ease-in-out 0s infinite linear none; */
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+
+.effect2{
+  transform: scale(1);
+  transition: transform 1s ease;
+}
+
+.effect2:hover{
+  transform: scale(1.2);
+}
+
+.effect3{
+  color: white;
+}
+.effect4{
+  color: black;
+}
+.effect3, .effect4{
+  cursor:default;
+  user-select: none;
+  transition: all 0.4s ease;
+}
+.effect3:hover, .effect4:hover{
+  color: red;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -27,4 +57,44 @@ a {
     color: white;
     background: black;
   }
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes effect2anim {
+	0% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(1.2);
+	}
 }
