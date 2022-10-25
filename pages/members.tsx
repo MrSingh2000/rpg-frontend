@@ -1,16 +1,18 @@
 import Image from "next/image";
 import React from "react";
 import sample from "../assets/sample.jpg";
+import SimpleNav from "../components/SimpleNav";
 
 type Props = {
-  data: any;
+  data: any,
+  host: string,
 };
 
-function members({ data }: Props) {
+function members({ data, host }: Props) {
   // console.log("data: ", data[0].attributes.pic.data.attributes.url);
   return (
     <div>
-      <nav>this is navbar</nav>
+      <SimpleNav />
 
       <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
         <div className="py-8">
@@ -21,25 +23,25 @@ function members({ data }: Props) {
                   <tr>
                     <th
                       scope="col"
-                      className="font-bold px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
+                      className="font-bold px-5 py-3 bg-gray-100 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
                     >
                       Member
                     </th>
                     <th
                       scope="col"
-                      className="font-bold px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
+                      className="font-bold px-5 py-3 bg-gray-100 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
                     >
                       Batch
                     </th>
                     <th
                       scope="col"
-                      className="font-bold sm:table-cell hidden px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
+                      className="font-bold sm:table-cell hidden px-5 py-3 bg-gray-100 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
                     >
                       Branch
                     </th>
                     <th
                       scope="col"
-                      className="font-bold sm:table-cell hidden px-5 py-3 bg-white  border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
+                      className="font-bold sm:table-cell hidden px-5 py-3 bg-gray-100 border-b border-gray-200 text-gray-800  text-left text-sm uppercase font-normal"
                     >
                       City
                     </th>
@@ -58,7 +60,7 @@ function members({ data }: Props) {
                               <a href="#" className="block relative">
                                 <img
                                   alt="profil"
-                                  src={`${process.env.BACKEND_HOST}${url}`}
+                                  src={`${host}${url}`}
                                   className="mx-auto object-cover rounded-full h-10 w-10 "
                                 />
                               </a>
@@ -107,7 +109,7 @@ export async function getServerSideProps() {
   const data = await res.json();
 
   // Pass data to the page via props
-  return { props: { data: data.data } };
+  return { props: { data: data.data, host: process.env.BACKEND_HOST } };
 }
 
 export default members;

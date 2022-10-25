@@ -335,7 +335,7 @@ export default function Main({}: Props) {
             </div>
           </div>
           <div className="flex flex-wrap">
-            <div className="effect1 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="effect5 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
                 <img
                   alt="..."
@@ -351,7 +351,7 @@ export default function Main({}: Props) {
                 </div>
               </div>
             </div>
-            <div className="effect1 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="effect5 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
                 <img
                   alt="..."
@@ -367,7 +367,7 @@ export default function Main({}: Props) {
                 </div>
               </div>
             </div>
-            <div className="effect1 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="effect5 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
                 <img
                   alt="..."
@@ -383,7 +383,7 @@ export default function Main({}: Props) {
                 </div>
               </div>
             </div>
-            <div className="effect1 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div className="effect5 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
               <div className="px-6">
                 <img
                   alt="..."
@@ -399,7 +399,7 @@ export default function Main({}: Props) {
                 </div>
               </div>
             </div>
-            <div className="effect1 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 py-4">
+            <div className="effect5 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 py-4">
               <div className="px-6">
                 <img
                   alt="..."
