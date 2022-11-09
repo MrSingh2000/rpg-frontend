@@ -1,10 +1,12 @@
 import Link from "next/link";
 import React, { useRef } from "react";
 import { FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
+import Image from "next/image";
+import logo from "../public/logo.png";
 
 type Props = {};
 
-export default function Navbar({}: Props) {
+export default function Navbar({ }: Props) {
   const toggleRef: any = useRef(null);
 
   const toggleNavbar = (): void => {
@@ -12,14 +14,19 @@ export default function Navbar({}: Props) {
   };
 
   return (
-    <nav className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 ">
+    <nav className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2">
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
           <a
             className="pointer-events-none text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
             href="#"
           >
-            Royal Punjab Group
+            <Image
+              src={logo}
+              alt="Picture of the author"
+            width={50}
+            height={50}
+            />
           </a>
           <button
             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"

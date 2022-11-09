@@ -53,6 +53,32 @@ a {
   animation: effect5anim 2s ease 0s infinite normal forwards;
 }
 
+.rythm-bg, .pec-bg, .jalandhar-bg{
+  background-size: cover;
+  opacity: 0.4;
+  z-index: -1;
+  background-repeat: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: 50% 50%;
+  border-radius: 8px;
+}
+
+.rythm-bg{
+  background-image: url("../assets/rythem.jpg");
+}
+.pec-bg{
+  background-image: url("../assets/pec.jpg");
+}
+.jalandhar-bg{
+  background-image: url("../assets/nit_jalandhar.jpg");
+}
+.jalandhar-small-card{
+  background-image: url("../assets/rythem.jpg");
+max-width: 120px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

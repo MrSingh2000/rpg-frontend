@@ -11,11 +11,11 @@ type Props = {
 function members({ data, host }: Props) {
   // console.log("data: ", data[0].attributes.pic.data.attributes.url);
   return (
-    <div>
+    <div className="h-screen overflow-hidden">
       <SimpleNav />
 
-      <div className="container mx-auto px-4 sm:px-8 max-w-3xl">
-        <div className="py-8">
+      <div className="container mx-auto px-4 sm:px-8 w-full h-full">
+        <div className="py-1">
           <div className="-mx-4 sm:-mx-8 px-4 sm:px-8 py-4 overflow-x-auto">
             <div className="inline-block min-w-full shadow rounded-lg overflow-hidden">
               <table className="min-w-full leading-normal">
@@ -49,7 +49,6 @@ function members({ data, host }: Props) {
                 </thead>
                 <tbody>
                   {data.map((member: any) => {
-                    // console.log("pic: ", member.attributes.pic?.data.attributes.url)
                     let url =
                       member.attributes.pic?.data.attributes.url || "none";
                     return (
@@ -57,13 +56,13 @@ function members({ data, host }: Props) {
                         <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
                           <div className="flex items-center">
                             <div className="flex-shrink-0">
-                              <a href="#" className="block relative">
+                              <div className="block relative">
                                 <img
                                   alt="profil"
                                   src={`${host}${url}`}
                                   className="mx-auto object-cover rounded-full h-10 w-10 "
                                 />
-                              </a>
+                              </div>
                             </div>
                             <div className="ml-3">
                               <p className="text-gray-900 whitespace-no-wrap font-semibold">

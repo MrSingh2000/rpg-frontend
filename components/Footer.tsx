@@ -4,7 +4,7 @@ import { FaFacebook, FaYoutube, FaInstagram } from "react-icons/fa";
 
 type Props = {};
 
-export default function Footer({}: Props) {
+export default function Footer({ }: Props) {
   return (
     <footer className="relative bg-gray-300 pt-8 pb-6">
       <div
@@ -34,21 +34,21 @@ export default function Footer({}: Props) {
               Find us on any of these platforms, we respond within 1-2 days.
             </h5>
             <div className="mt-6">
-            <a href="https://www.youtube.com/c/RPGDcrust" target="_blank">
-              <button
-                className="effect1 bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <FaYoutube size={15}/>
-              </button>
+              <a href="https://www.youtube.com/c/RPGDcrust" target="_blank">
+                <button
+                  className="effect1 bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <FaYoutube size={15} />
+                </button>
               </a>
               <a href="https://www.instagram.com/royal_punjab_group" target="_blank">
-              <button
-                className="effect1 bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
-                type="button"
-              >
-                <FaInstagram size={15} />
-              </button>
+                <button
+                  className="effect1 bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                  type="button"
+                >
+                  <FaInstagram size={15} />
+                </button>
               </a>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function Footer({}: Props) {
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm text-gray-600 font-semibold py-1">
-              Copyright © 2022 RPG.
+              Copyright © {new Date().getFullYear()} RPG.
             </div>
           </div>
         </div>
