@@ -82,7 +82,7 @@ max-width: 120px;
 .main-bg{
   background-image: url("../assets/rpg_bg.png");
   background-size: cover;
-  background-position: '0% 25%';
+  background-position: 0% 25%;
 }
 
 @media (prefers-color-scheme: dark) {

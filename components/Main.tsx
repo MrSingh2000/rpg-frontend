@@ -67,7 +67,7 @@ export default function Main({ }: Props) {
         style={{ minHeight: "75vh" }}
       >
         <div
-          className="absolute top-0 w-full h-full bg-center bg-cover main-bg"
+          className="absolute w-full h-full top-0 left-0 main-bg"
         >
           <span
             id="blackOverlay"
