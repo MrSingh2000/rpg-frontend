@@ -58,7 +58,7 @@ export default function Navbar({ }: Props) {
               <a
                 className="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://www.instagram.com/royal_punjab_group"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <FaInstagram size={25} />
                 <span className="lg:hidden inline-block ml-2">instagram</span>
@@ -68,7 +68,7 @@ export default function Navbar({ }: Props) {
               <a
                 className="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 href="https://www.youtube.com/c/RPGDcrust"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <FaYoutube size={25} />
                 <span className="lg:hidden inline-block ml-2">youtube</span>

@@ -34,7 +34,7 @@ export default function Footer({ }: Props) {
               Find us on any of these platforms, we respond within 1-2 days.
             </h5>
             <div className="mt-6">
-              <a href="https://www.youtube.com/c/RPGDcrust" target="_blank">
+              <a href="https://www.youtube.com/c/RPGDcrust" target="_blank" rel="noreferrer">
                 <button
                   className="effect1 bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                   type="button"
@@ -42,7 +42,7 @@ export default function Footer({ }: Props) {
                   <FaYoutube size={15} />
                 </button>
               </a>
-              <a href="https://www.instagram.com/royal_punjab_group" target="_blank">
+              <a href="https://www.instagram.com/royal_punjab_group" target="_blank" rel="noreferrer">
                 <button
                   className="effect1 bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
                   type="button"

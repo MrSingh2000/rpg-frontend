@@ -316,9 +316,9 @@ export default function Main({ }: Props) {
             </div>
           </div>
           <div className="flex flex-wrap">
-            {achievements.map((item) => {
+            {achievements.map((item, index) => {
               return (
-                <div className="effect5 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 py-2">
+                <div key={index} className="effect5 w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 py-2">
                   <div className="px-6 text-center">
                     <Image
                       src={item.image}
