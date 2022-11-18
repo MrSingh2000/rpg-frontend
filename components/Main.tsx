@@ -12,6 +12,7 @@ import nit_kuk_small from "../public/logos/nit_kuk.png";
 import pec_small from "../public/logos/pec.png";
 import rythm_small from "../public/logos/rythm.png";
 import jalandhar_small from "../public/logos/jalandhar.jpg";
+import cult_small from "../public/logos/cult.png";
 
 type StaticImageData = {
   src: string
@@ -49,6 +50,11 @@ export default function Main({ }: Props) {
       title: "PEC Chandigarh",
       position: "2nd Postition",
       image: pec_small
+    },
+    {
+      title: "CULT WUD",
+      position: "1st Postition",
+      image: cult_small
     }
   ]
 
@@ -59,14 +65,7 @@ export default function Main({ }: Props) {
         style={{ minHeight: "75vh" }}
       >
         <div
-          className="absolute top-0 w-full h-full bg-center bg-cover"
-          style={{
-            // https://drive.google.com/file/d/1oIBXQTik4Xovt_7TupFw2DakVnYIBJ78/view?usp=sharing
-            backgroundImage:
-              'url("https://drive.google.com/uc?export=view&id=1oIBXQTik4Xovt_7TupFw2DakVnYIBJ78")',
-            backgroundSize: 'cover',
-            backgroundPosition: '0% 25%'
-          }}
+          className="absolute top-0 w-full h-full bg-center bg-cover main-bg"
         >
           <span
             id="blackOverlay"
