@@ -103,7 +103,7 @@ function members({ data, host }: Props) {
 export async function getServerSideProps() {
   // Fetch data from external API
   const res = await fetch(
-    `${process.env.BACKEND_HOST}/api/members?populate=pic&sort[0]=branch&sort[1]=name`
+    `${process.env.BACKEND_HOST}/api/members?populate=pic&sort[0]=batch&sort[1]=name`
   );
   const data = await res.json();
 
