@@ -7,6 +7,8 @@ import { BsTrophy } from "react-icons/bs";
 import { GiBowTieRibbon } from 'react-icons/gi';
 import { IoIosRibbon } from 'react-icons/io';
 import logo from "../public/logo.png";
+import card1 from "../assets/card1.jpg";
+import card2 from "../assets/card2.jpeg";
 import dgc_small from "../public/logos/dgc.png";
 import nit_kuk_small from "../public/logos/nit_kuk.png";
 import pec_small from "../public/logos/pec.png";
@@ -26,6 +28,11 @@ type Props = {};
 export default function Main({ }: Props) {
 
   let achievements: { title: string, position: string, image: StaticImageData }[] = [
+    {
+      title: "CULT WUD",
+      position: "1st Postition",
+      image: cult_small
+    },
     {
       title: "NIT Jalandhar",
       position: "1st Postition",
@@ -51,11 +58,6 @@ export default function Main({ }: Props) {
       position: "2nd Postition",
       image: pec_small
     },
-    {
-      title: "CULT WUD",
-      position: "1st Postition",
-      image: cult_small
-    }
   ]
 
   return (
@@ -233,7 +235,7 @@ export default function Main({ }: Props) {
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
                 <img
                   alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
+                  src="https://drive.google.com/uc?export=view&id=1xx0YwkieDTRgptckmvo8O0HNe-WV-nby"
                   className="w-full align-middle rounded-t-lg"
                 />
               </div>
@@ -267,7 +269,7 @@ export default function Main({ }: Props) {
               <img
                 alt="..."
                 className="max-w-full rounded-lg shadow-lg"
-                src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=634&amp;q=80"
+                src="https://drive.google.com/uc?export=view&id=1jmEOgEPKVkPzQ3-invo0LlAIk2F2ThJk"
               />
             </div>
             <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
