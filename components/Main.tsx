@@ -172,7 +172,7 @@ export default function Main({ }: Props) {
                   </div>
                   <h6 className="text-xl text-black font-semibold drop-shadow">NIT Jalandhar</h6>
                   <p className="mt-2 mb-4 text-black text-gray-600 drop-shadow">
-                    1st position at NIT Jalander annual fest under Music Category.
+                    1st position at NIT Jalandhar annual fest under Music Category.
                   </p>
                 </div>
 
@@ -188,7 +188,7 @@ export default function Main({ }: Props) {
                   <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                     <BsTrophy size={25} />
                   </div>
-                  <h6 className="text-xl text-black font-semibold drop-shadow">Rythem Winners</h6>
+                  <h6 className="text-xl text-black font-semibold drop-shadow">Rhythm Winners</h6>
                   <p className="mt-2 mb-4 text-black text-gray-600 drop-shadow">
                     9 times Rythem winners. <br /> <i>(cultural fest organised by DCRUST, Murthal)</i>
                   </p>
