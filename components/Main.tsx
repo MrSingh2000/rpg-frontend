@@ -284,7 +284,7 @@ export default function Main({ }: Props) {
                 </div>
                 <h3 className="text-3xl font-semibold">A Growing Family</h3>
                 <p className="mt-4 text-lg leading-relaxed text-gray-600">
-                  Not only learn bhangra but many aspects of life too. Enhances one's qualities, make one learn to work as a team, build confidence, and teaches the importance of disiplene.
+                  Not only learn bhangra but many aspects of life too. Enhances one's qualities, make one learn to work as a team, build confidence, and teaches the importance of discipline.
                 </p>
               </div>
             </div>
