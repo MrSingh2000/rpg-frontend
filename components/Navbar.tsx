@@ -43,14 +43,15 @@ export default function Navbar({ }: Props) {
         >
           <ul className="flex flex-col lg:flex-row list-none mr-auto">
             <li className="flex items-center">
-              <Link href="/members">
+              {/* FIXME: members section is disabled because backend is made shutdown every 15 minutes on free plan, making all data reset */}
+              {/* <Link href="/members">
                 <span
                   className="cursor-pointer lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
                 >
                   <i className="lg:text-gray-300 text-gray-500 far fa-file-alt text-lg leading-lg mr-2"></i>
                   Members
                 </span>
-              </Link>
+              </Link> */}
             </li>
           </ul>
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
